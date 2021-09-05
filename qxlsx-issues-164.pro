@@ -3,8 +3,9 @@ QT -= gui
 CONFIG += c++11 console
 CONFIG -= app_bundle
 
+DEFINES += SOURCE_PATH=\\\"$$PWD\\\"
 
-include(/home/mmjvox/qttest/QXlsx/QXlsx.pri)
+include($$PWD/QXlsx/QXlsx.pri)
 
 SOURCES += \
         main.cpp
